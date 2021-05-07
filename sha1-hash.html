@@ -32,8 +32,8 @@
                 <h1 class="heading-title">SHA-1 Hash Generator</h1>
             </div>
             <div class="main-div-box">
-                <input type="text" id="url-text" class="input-text" placeholder="Enter String to generate SHA-1 Hash"> 
-                <input type="text" id="url-result" class="input-text" placeholder="SHA-1 Hash output will appear here">
+                <input type="text" id="string-text" class="input-text" placeholder="Enter String to generate SHA-1 Hash"> 
+                <input type="text" id="hash-result" class="input-text" placeholder="SHA-1 Hash output will appear here">
             </div>
             <div class="main-div-button">
                 <div class="button-div">
@@ -44,5 +44,19 @@
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script>
+        function sha1(str) {
+        const hash = CryptoJS.SHA1(str);
+        const sha1Hash = hash.toString(CryptoJS.enc.Hex);
+        return sha1Hash;
+        }
+        const inputtext = document.querySelector('#string-text');
+        const outputtext = document.querySelector('#hash-result');
+        const hashvalue = document.querySelector('#generator-btn-encode');
+        hashvalue.addEventListener('click', () => {
+        outputtext.value = sha1(inputtext.value);
+        });
+    </script>
 </body>
 </html>

@@ -66,7 +66,7 @@ body{
     border-style: solid;
     border-color: #22223B;
     border-radius: 5px;
-    width: 350px;
+    width: 400px;
     text-align: center;
     font-size: 17px;
 }
@@ -89,6 +89,16 @@ body{
 #btn-encode{
       margin-right: 250px;
 }
-#generator-btn-encode{
+.input-text-sha256{
+    margin: 15px;
+    height: 150px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #22223B;
+    border-radius: 5px;
+    width: 425px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
 
 }

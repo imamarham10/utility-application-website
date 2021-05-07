@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/index.css">
-
 </head>
 <body>
     <header class="header">
@@ -32,8 +31,8 @@
                 <h1 class="heading-title">MD5 Hash Generator</h1>
             </div>
             <div class="main-div-box">
-                <input type="text" id="url-text" class="input-text" placeholder="Enter String to generate MD5 Hash"> 
-                <input type="text" id="url-result" class="input-text" placeholder="MD5 Hash output will appear here">
+                <input type="text" id="string-text" class="input-text" placeholder="Enter String to generate MD5 Hash"> 
+                <input type="text" id="hash-result" class="input-text" placeholder="MD5 Hash output will appear here">
             </div>
             <div class="main-div-button">
                 <div class="button-div">
@@ -44,6 +43,20 @@
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script>
+        function md5(str) {
+        const hash = CryptoJS.MD5(str);
+        const md5Hash = hash.toString(CryptoJS.enc.Hex);
+        return md5Hash;
+        }
+        const inputtext = document.querySelector('#string-text');
+        const outputtext = document.querySelector('#hash-result');
+        const hashvalue = document.querySelector('#generator-btn-encode');
+        hashvalue.addEventListener('click', () => {
+        outputtext.value = md5(inputtext.value);
+        });
+    </script>
     <!-- <script src="/md5-hash.js"></script> -->
 </body>
 </html>
