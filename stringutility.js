@@ -15,10 +15,10 @@ reverse.addEventListener('click',()=>{
     input.value = input.value.split('').reverse().join('');
 });
 charcount.addEventListener('click',()=>{
-    window.alert(parseInt(input.value.length, 10));
+    window.alert("Character Count: " + parseInt(input.value.length, 10));
 });
 wordcount.addEventListener('click',()=>{
   //  let len = parseInt(input.value.split(' ').length, 10);
-    window.alert(parseInt(input.value.split(' ').length,10));
+    window.alert("Word Count: " + parseInt(input.value.split(' ').length,10));
     
 });
