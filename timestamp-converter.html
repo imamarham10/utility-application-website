@@ -25,5 +25,59 @@
               </div>
         </div> 
     </header>
+    <main>
+        <div class="main-div-clock">
+            <div>
+                <h1 class="heading-timestamp">Human Date to Timestamp</h1>
+            </div>
+            <div class="input-div-timestamp">
+                <div>
+                    <label for="year" class="label-text">Year:</label><br>
+                    <input type="number" id="year" placeholder="yyyy" class="input-text-timestamp"> 
+                </div>
+                <div>
+                    <label for="month" class="label-text">Month:</label><br>
+                    <input type="number" id="month" placeholder="mm" class="input-text-timestamp"> 
+                </div>
+                <div>
+                    <label for="date" class="label-text">Date:</label><br>
+                    <input type="number" id="date" placeholder="dd" class="input-text-timestamp"> 
+                </div>
+                <div>
+                    <label for="hour" class="label-text">Hour:</label><br>
+                    <input type="number" id="hour" placeholder="hr" class="input-text-timestamp"> 
+                </div>
+                <div>
+                    <label for="minute" class="label-text">Minute:</label><br>
+                    <input type="number" id="minute" placeholder="min" class="input-text-timestamp"> 
+                </div>
+                <div>
+                    <label for="second" class="label-text">Second:</label><br>
+                    <input type="number" id="second" placeholder="sec" class="input-text-timestamp"> 
+                </div>              
+            </div>
+            <div class="button-timestamp">
+                <input type="button" id="convert1" value="CONVERT" class="button-string" >
+            </div>
+            <div>
+                <input type="number" id="output1" class="output" disabled>
+            </div>
+        </div>
+        <div class="main-div-clock">
+            <div>
+                <h1 class="heading-timestamp">Timestamp to Human Date</h1>
+            </div>
+            <div class="input-div-timestamp">
+                <input type="number" id="timestamp" placeholder="1620835962" class="input-text-unit">
+            </div>
+            <div class="button-timestamp">
+                <input type="button" id="convert2" value="CONVERT" class="button-string" >
+            </div>
+            <div>
+                <input type="number" id="output2" disabled class="output">
+            </div>
+        </div>
+    </main>
+    <script src="/timestamp.js"></script>
 </body>
 </html>
