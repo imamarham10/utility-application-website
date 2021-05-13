@@ -10,12 +10,12 @@ body{
     height: 80px;
     padding-top: 40px;
     margin: 0 auto;
-    
-
+    width: 100vw;
 }
 .header-flexbox{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .logo{
     color: #F2E9E4;
@@ -355,6 +355,7 @@ body{
 .input-div-timestamp{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
@@ -389,4 +390,20 @@ body{
     font-size: 17px;
     color: #22223B;
     font-weight: bold;    
+}
+
+@media only screen and (max-width: 375)
+{
+    .header{
+        width: 100vw;
+    }
+    .nav{
+        width: 100vw;
+    }
+    .logo{
+        font-size: 16px;
+    }
+    body{
+      font-size: 5px;  
+    }
 }
