@@ -177,7 +177,15 @@ body{
     color: #22223B;
     text-shadow: .19px .19px 15px #4A4E69;
     margin-left: 350px;
-    margin-right: 350;
+    margin-right: 350px;
+    text-align: center;
+}
+.box{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 1px solid #22223B;
 }
 .div-output{
     height: 25px;
