@@ -412,13 +412,13 @@ body{
     }
     .heading-timestamp{
         font-size: 14px;
-        margin-top: 0;
+        margin-top: 10;
         margin-left: 50px;
         margin-right: 50px;
 
     }
     .label-text{
-        font-size: 11px;
+        font-size: 12px;
     }
     .input-text-timestamp{
         align-items: center;
