@@ -240,6 +240,19 @@ body{
     text-decoration: underline;
     font-weight: bolder;
 }
+.input-text-num{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 25px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #22223B;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    font-size: 17px;
+}
 .main-div-unit{
     display: flex;
     align-items: center;
@@ -318,6 +331,7 @@ body{
     height: 200px;
     text-align: center;
     font-size: 17px;    
+    font-family: sans-serif;
 }
 .buttons{
     display: flex;
@@ -562,5 +576,19 @@ body{
         margin-left: 20px;
         margin-right: 20px;
         align-items: center;
+    }
+    .main-input-num{
+        width: 70%;
+        margin: 40px auto;
+        height: auto;
+    }
+    .input-text-num{
+        width: 50vw;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .heading-title-num{
+        font-size: 14px;
+        margin-top: 10px;
     }
 }
