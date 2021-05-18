@@ -30,7 +30,7 @@ body{
     color: #F2E9E4;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-decoration: solid;
     font-size: 28px;
     margin-right: 30px;
@@ -43,6 +43,7 @@ body{
 .nav{
     display: flex;
     flex-direction:row;
+    justify-content: space-evenly;
 }
 .nav-anchor{
     color: #F2E9E4;
@@ -52,7 +53,7 @@ body{
     margin-right: 10px;
    
     text-decoration: solid;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     align-items: center;
 }
@@ -427,13 +428,14 @@ body{
         margin-right: 10px;
         text-align: center;
         font-size: 16px;
-        margin-top: 10px;
+       
     }
     
     .div-nav{
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: 30px;
         align-items: center;
+        justify-content: center;
     }
     .nav{
         flex-wrap: wrap;
@@ -442,8 +444,6 @@ body{
         margin-left: 5px;
         margin-top: 10px;
         font-size: 12px;
-        text-align: center;
-        align-items: center;
     }
     .main-div-clock{
         width: 70%;
