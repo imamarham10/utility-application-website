@@ -308,6 +308,8 @@ body{
     font-weight: bolder;
 }
 .input-unit{
+    display: flex;
+    flex-direction: row;
     margin-right: 50px;
     margin-left: 50px;
     align-items: center;
@@ -575,7 +577,7 @@ body{
     border-radius: 5px;
     width: 150px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     }
     .main-div-string{
         width: 70%;
@@ -669,5 +671,23 @@ body{
         margin-left: 150px;
         margin-right: 150px;
         align-items: center;
+    }
+    .main-div-unit{
+        width: 70%;
+        margin: 40px auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .heading-title-unit{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .text-label{
+        text-align: center;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    .input-unit{
+        flex-direction: column;
     }
 }
