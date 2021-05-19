@@ -197,6 +197,8 @@ body{
     width: 200px;
     text-align: center;
     font-size: 17px;
+    align-items: center;
+    background-color: #fff;
 }
 .button-rgb{
     font-weight: bold;
@@ -226,6 +228,7 @@ body{
     margin-left: 350px;
     margin-right: 350px;
     text-align: center;
+    text-decoration: underline;
 }
 .box{
     border-radius: 50%;
@@ -689,5 +692,49 @@ body{
     }
     .input-unit{
         flex-direction: column;
+    }
+    .heading-title-rgb{
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .main-div-rgb{
+        flex-direction: column;
+        width: 80%;
+        margin: 40px auto;
+        height: auto;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    .div-input-rgb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 75%;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .button-rgb{
+        padding: 7px 9px;
+        font-size: 15px;
+        box-shadow: 0 5px #999;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    .input-text-rgb{
+        width: 75%;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 13px;
     }
 }
