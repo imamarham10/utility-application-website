@@ -10,19 +10,19 @@
 <body>
     <header class="header">
         <div class="header-flexbox">
-            <div>
+            <div class="div-logo">
                 <a href="/index.html" class="logo">UTILITY-APPS</a>
-              </div>
-              <div>  
-                  <nav>
-                  <a href="/url-en-de.html" class="nav-anchor">Url Encoder/Decoder</a>
-                  <a href="/base64.html" class="nav-anchor">Base64</a>
-                  <a href="/md5-hash.html" class="nav-anchor">MD5 Hash</a>
-                  <a href="/sha1-hash.html" class="nav-anchor">SHA-1 Hash</a>
-                  <a href="/sha256-hash.html" class="nav-anchor">SHA-256 Hash</a>
-                  <a href="/sha512-hash.html" class="nav-anchor">SHA-512 Hash</a>
-                  </nav>
-              </div>
+            </div>
+            <div class="div-nav">  
+                <nav class="nav">
+                    <a href="/url-en-de.html" class="nav-anchor">URL<br>Encoder<br>Decoder</a>
+                    <a href="/base64.html" class="nav-anchor">Base64<br>Encoder<br>Decoder</a>
+                    <a href="/md5-hash.html" class="nav-anchor">MD5<br>Hash<br>Generator</a>
+                    <a href="/sha1-hash.html" class="nav-anchor">SHA1<br>Hash<br>Generator</a>
+                    <a href="/sha256-hash.html" class="nav-anchor">SHA256<br>Hash<br>Generator</a>
+                    <a href="/sha512-hash.html" class="nav-anchor">SHA512<br>Hash<br>Generator</a>
+                    </nav>
+            </div>
         </div> 
     </header>
     <main>
@@ -34,12 +34,11 @@
                 <input type="text" id="url-text" class="input-text" placeholder="Enter Url to encode/decode"> 
                 <input type="text" id="url-result" class="input-text" placeholder="Encoded/Decoded Url will appear here">
             </div>
-            <div class="main-div-button">
-                <div class="button-div">
-                    <input type="button" id="btn-encode" value="Encode" class="button">
-                    <input type="button" id="btn-decode" value="Decode" class="button">
-                </div>
-                
+        </div>
+        <div class="main-div-button">
+            <div class="button-div">
+                <input type="button" id="btn-encode" value="Encode" class="button">
+                <input type="button" id="btn-decode" value="Decode" class="button">
             </div>
         </div>
     </main>

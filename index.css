@@ -62,6 +62,9 @@ body{
     margin-bottom: 15px;
     color: #22223B;
     text-shadow: .19px .19px 15px #4A4E69;
+    font-size: 22px;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 .main-div{
     display: flex;
@@ -72,7 +75,23 @@ body{
     border-style: solid;
     border-color: #22223B;
     margin-top: 50px;
-    height: 400px;
+    height: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: 0px 0px 10px #22223bbb ;
+}
+.main-div-hash{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C9ADA7;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #22223B;
+    margin-top: 50px;
+    height: 300px;
     margin-left: 150px;
     margin-right: 150px;
     border-radius: 10px;
@@ -89,6 +108,7 @@ body{
     width: 400px;
     text-align: center;
     font-size: 17px;
+    background-color: #fff;
 }
 .button{
     font-weight: bold;
@@ -101,18 +121,25 @@ body{
     background-color: #4A4E69;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px rgb(136, 134, 134);
+    margin-top: 25px;
 }
 .button:hover{
     background-color: #22223B;
 }
-#btn-encode{
-      margin-right: 150px;
-      margin-left: 100px;
+.main-div-button{
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    margin-right: 500px;
 }
-#btn-decode{
-    margin-right: 100px;
-      margin-left: 150px;
+.main-div-button-hash{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 550px;
+    margin-right: 550px;
 }
 .input-text-sha256{
     margin: 15px;
@@ -590,5 +617,57 @@ body{
     .heading-title-num{
         font-size: 14px;
         margin-top: 10px;
+    }
+    .main-div{
+        width: 70%;
+        margin: 40px auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .heading-title{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .input-text{
+        height: 100px;
+        width: 60vw;
+        font-size: 12px;
+    }
+    .main-div-button{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .button{
+        font-weight: bold;
+        padding: 7px 9px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4A4E69;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 6px #999;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right:5px;
+    }
+    .main-div-hash{
+        width: 70%;
+        margin: 40px auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .main-div-button-hash{
+        margin-top: 10px;
+        margin-left: 150px;
+        margin-right: 150px;
+        align-items: center;
     }
 }
