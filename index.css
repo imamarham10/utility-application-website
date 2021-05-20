@@ -2,6 +2,8 @@
   margin: 0;
 } 
 body{
+    color: #000000;
+    font-weight: 500;
     background-color: #F2E9E4;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -51,6 +53,7 @@ body{
     font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 5px;
    
     text-decoration: solid;
     /* margin-top: 20px; */
@@ -522,6 +525,35 @@ body{
     color: #22223B;
     font-weight: bold;    
 }
+.container{
+    width: calc(100%-360px);
+    height: calc(100vh-80px);
+    padding: 25px 100px;
+}
+.heading{
+    color:#22223B;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 700;
+    width: fit-content;
+}
+.heading:hover{
+    background-color: #F2E9E4;
+    color: #22223B;
+}
+a:hover {
+    color: #22223B;
+    background-color: #F2E9E4;
+}
+a:active{
+    color: #22223B;
+    background-color: #F2E9E4;
+}
+.index-body{
+    background-color: #C9ADA7;
+}
 @media screen and (max-width: 600px) {
     .header-flexbox{
         display: flex;
@@ -559,13 +591,15 @@ body{
     .main-div-clock{
         width: 70%;
         margin: 20px auto;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .heading-timestamp{
         font-size: 14px;
         margin-top: 10;
         margin-left: 50px;
         margin-right: 50px;
-
     }
     .label-text{
         font-size: 12px;
@@ -796,5 +830,15 @@ body{
     }
     .text-label-hex{
         font-size: 14px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 25px;
+        align-items: center;
+    }
+    .heading:hover{
+        color: #22223B;
+        background-color: #F2E9E4;
     }
 }
