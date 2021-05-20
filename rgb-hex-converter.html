@@ -33,15 +33,15 @@
             <div class="div-input-rgb">
                 <div>
                     <label for="input-red" style="margin-left:10px;margin-right: 15px;" class="text-label">Red:</label>
-                    <input type="number" id="input-red" class="input-text-rgb" value placeholder="0-255">
+                    <input type="number" id="input-red" class="input-text-rgb" value placeholder="0-255" min="0" max="255">
                 </div>    
                 <div>
                     <label for="input-green" style="margin-left:8px ;"class="text-label">Green:</label>
-                    <input type="number" id="input-green" class="input-text-rgb" value placeholder="0-255">
+                    <input type="number" id="input-green" class="input-text-rgb" value placeholder="0-255" min="0" max="255">
                 </div>
                 <div>
                     <label for="input-blue" style="margin-left:10px;margin-right: 12px;"class="text-label">Blue:</label>
-                    <input type="number" id="input-blue" class="input-text-rgb" value placeholder="0-255">
+                    <input type="number" id="input-blue" class="input-text-rgb" value placeholder="0-255" min="0" max="255">
                 </div>
                 <div class="button-div">
                     <input type="button" id="generator-btn-encode" value="Generate" class="button-rgb">   
@@ -54,6 +54,25 @@
                 <div id="box" class="box">
 
                 </div>
+            </div>  
+        </div>
+        <div class="main-div-title-rgb">
+            <h1 class="heading-title-rgb">HEX To RGB Converter</h1>
+        </div>
+        <div class="main-div-rgb-hex">
+            <div class="div-input-rgb-hex">
+                <div>
+                    <label class="text-label-hex">HEX Color Code</label><br>
+                    <input type="text" id="hex-input-text" placeholder="HEX INPUT" class="input-text-rgb"></textarea>
+                </div>
+                <div id="box2" class="box">
+                </div>
+                <div>
+                    <input type="text" id="rgb-output-text" placeholder="RGB OUTPUT" class="input-text-rgb" disabled></textarea>
+                </div>
+                <div class="button-div">
+                    <input type="button" id="generator-btn-decode" value="Generate" class="button-rgb">   
+                </div> 
             </div>  
         </div>
 

@@ -162,7 +162,10 @@ body{
     border-style: solid;
     border-color: #22223B;
     margin-top: 25px;
-    height: 375px;
+    margin-bottom: 25px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-left: 150px;
     margin-right: 150px;
     border-radius: 10px;
@@ -177,10 +180,46 @@ body{
     border-width: 2px;
     border-style: solid;
     border-color: #22223B;
-    margin-top: 10px;
     margin-left: 100px;
     margin-right: 20px;
-    height: 300px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 325px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px #22223b; */
+}
+.main-div-rgb-hex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #C9ADA7;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #22223B;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+    width: fit-content;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: 0px 0px 10px #22223b ;
+}
+.div-input-rgb-hex{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2E9E4;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #22223B;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    height: auto;
     width: 325px;
     border-radius: 10px;
     /* box-shadow: 0px 0px 10px #22223b; */
@@ -219,6 +258,13 @@ body{
 }
 .text-label{
     font-weight: bold;
+}
+.text-label-hex{
+    font-weight: bold;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #22223B;
 }
 .heading-title-rgb{
     margin-top: 25px;
@@ -736,5 +782,19 @@ body{
         margin-left: 20px;
         margin-right: 20px;
         font-size: 13px;
+    }
+    .main-div-rgb-hex{
+        flex-direction: column;
+        width: 80%;
+        margin: 40px auto;
+        height: auto;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    .div-input-rgb-hex{
+        width: 75%;
+    }
+    .text-label-hex{
+        font-size: 14px;
     }
 }

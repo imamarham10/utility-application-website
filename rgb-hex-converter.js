@@ -4,6 +4,10 @@ const btnBlue = document.querySelector('#input-blue');
 const btnGenerate = document.querySelector('#generator-btn-encode');
 const hexOutput = document.querySelector('#hex-output-text');
 const box = document.querySelector('#box');
+const box2 = document.querySelector('#box2');
+const hexInput = document.querySelector('#hex-input-text');
+const rgbOutput = document.querySelector('#rgb-output-text');
+const decodeGenerate = document.querySelector('#generator-btn-decode');
 btnGenerate.addEventListener("click",()=> {
   let r = document.querySelector('#input-red').value;
   let g = document.querySelector('#input-green').value;
@@ -25,3 +29,20 @@ btnGenerate.addEventListener("click",()=> {
   box.style.backgroundColor = hexOutput.value ;
   box.style.borderColor = hexOutput.value;
 });
+
+function hexToRgb(hex)
+{
+  const hexValue=hex.match(/.{1,2}/g);
+  const red=parseInt(hexValue[0],16);
+  const green=parseInt(hexValue[1],16);
+  const blue=parseInt(hexValue[2],16);
+  return [red,green,blue];
+}
+hexInput.addEventListener('input',()=>{
+  box2.style.backgroundColor = ('#'+hexInput.value).toUpperCase();
+})
+decodeGenerate.addEventListener("click",()=>{
+  const ans = hexToRgb(hexInput.value);
+  const rgb = `rgb(${ans[0]},${ans[1]},${ans[2]})`;
+  rgbOutput.value = rgb;
+})
