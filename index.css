@@ -564,6 +564,10 @@ a:active{
     color: #22223B;
     margin: 1.5px auto;
 }
+.content{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 @media screen and (max-width: 600px) {
     .header-flexbox{
         display: flex;
@@ -854,6 +858,5 @@ a:active{
     .heading:hover{
         color: #22223B;
         background-color: #F2E9E4;
-    }
-   
+    } 
 }
