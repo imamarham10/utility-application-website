@@ -859,15 +859,5 @@ a:active{
     .heading:hover{
         color: #22223B;
         background-color: #F2E9E4;
-    }
-    .paragraph{
-        font-size: 12px;
-    }
-    .list{
-        font-size: 12px;
-    }
-    .content{
-        font-size: 12px;
     } 
-
 }
