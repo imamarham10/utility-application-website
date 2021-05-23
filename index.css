@@ -36,6 +36,7 @@ body{
     text-decoration: solid;
     font-size: 28px;
     margin-right: 30px;
+    letter-spacing: 1.5px;
 }
 
 .div-nav{
@@ -543,9 +544,14 @@ body{
     background-color: #F2E9E4;
     color: #22223B;
 }
+.paragraph{
+    padding: 10px;
+    margin-bottom: 10px;
+}
 a:hover {
     color: #22223B;
     background-color: #F2E9E4;
+    text-decoration: underline;
 }
 a:active{
     color: #22223B;
@@ -836,6 +842,10 @@ a:active{
         flex-direction: column;
         padding: 10px 25px;
         align-items: center;
+        justify-content: center;
+    }
+    .heading{
+        padding: 5px;
     }
     .heading:hover{
         color: #22223B;
