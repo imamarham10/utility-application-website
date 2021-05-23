@@ -560,6 +560,10 @@ a:active{
 .index-body{
     background-color: #C9ADA7;
 }
+.list{
+    color: #22223B;
+    margin: 1.5px auto;
+}
 @media screen and (max-width: 600px) {
     .header-flexbox{
         display: flex;
@@ -851,4 +855,5 @@ a:active{
         color: #22223B;
         background-color: #F2E9E4;
     }
+   
 }
