@@ -136,6 +136,8 @@ body{
     justify-content: center;
     margin-left: 500px;
     margin-right: 500px;
+    padding-bottom: 20px;
+
 }
 .main-div-button-hash{
     display: flex;
@@ -144,6 +146,8 @@ body{
     justify-content: center;
     margin-left: 550px;
     margin-right: 550px;
+    padding-bottom: 20px;
+
 }
 .input-text-sha256{
     margin: 15px;
@@ -567,6 +571,20 @@ a:active{
 .content{
     margin-top: 25px;
     margin-bottom: 25px;
+}
+.footer{   
+    background-color: #22223B;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+}
+.footer-div{
+    color: #fff;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
     .header-flexbox{
