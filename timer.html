@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-flexbox">
+            <div class="div-logo">
+                <a href="/index.html" class="logo">HOME</a>
+            </div>
+            <div class="div-nav">  
+                  <nav class="nav">
+                  <a href="/encoder-decoder.html" class="nav-anchor">Encoder<br>Decoder</a>
+                  <a href="/rgb-hex-converter.html" class="nav-anchor">RGB/HEX<br>Converter</a>
+                  <a href="/timestamp-converter.html" class="nav-anchor">Timestamp<br>Converter</a>
+                  <a href="/unit-converter.html" class="nav-anchor">Unit<br>Converter</a>
+                  <a href="/number-base-converter.html" class="nav-anchor">Number Base<br>Converter</a>
+                  <a href="/text-string-utilities.html" class="nav-anchor">String<br>Utilities</a>
+                  </nav>
+            </div>
+        </div> 
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-div-timer">
+                <div class="main-div-title">
+                    <h1 class="heading-title">Countdown Timer</h1>
+                </div>
+                <div class="input-div-timestamp" id="input-div-time">
+                    <div>
+                        <label for="hour" class="label-text">Hour:</label><br>
+                        <input type="number" id="hour" placeholder="hr" class="input-text-timestamp" min="00" max="23"> 
+                      </div>
+                      <div>
+                        <label for="minute" class="label-text">Minute:</label><br>
+                        <input type="number" id="minute" placeholder="min" class="input-text-timestamp" min="00" max="59"> 
+                      </div>
+                      <div>
+                        <label for="second" class="label-text">Second:</label><br>
+                        <input type="number" id="second" placeholder="sec" class="input-text-timestamp" min="00" max="59"> 
+                      </div>  
+                </div>
+                <div class="button-container">
+                    <div>
+                      <input type="button" id="start" value="START" class="button-timer">
+                    </div>
+                    <div>
+                      <input type="button" id="reset" value="RESET" class="button-timer">
+                    </div>
+                  </div>
+            </div>
+        </div>
+ 
+           
+          
+             
+       
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-div">
+            Web-Utilities : Countdown Timer
+        </div>
+
+    </footer>
+      <script src="/timer.js"></script>
+</body>
+</html>
