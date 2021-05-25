@@ -774,6 +774,7 @@ a:active{
         margin-top: 10px;
         margin-left: 5px;
         margin-right:5px;
+        margin-bottom: 40px;
     }
     .main-div-hash{
         width: 70%;
@@ -783,6 +784,7 @@ a:active{
     }
     .main-div-button-hash{
         margin-top: 10px;
+        margin-bottom: 40px;
         margin-left: 150px;
         margin-right: 150px;
         align-items: center;
@@ -877,4 +879,7 @@ a:active{
         color: #22223B;
         background-color: #F2E9E4;
     } 
+    .footer-div{
+        font-size: 14px;
+    }
 }
