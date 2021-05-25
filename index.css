@@ -658,7 +658,7 @@ a:active{
     border-color: #22223B;
     margin-top: 50px;
     margin-bottom: 50px;
-    height: 350px;
+    height: auto;
     margin-left: 150px;
     margin-right: 150px;
     border-radius: 10px;
