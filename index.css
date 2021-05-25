@@ -512,7 +512,26 @@ body{
     margin-top: 5px;
     font-size: 17px;
 }
+.input-text-timer{
+    align-items: center;
+    margin-bottom: 25px;
+    border-width: 1.35px;
+    border-style: solid;
+    border-color: #22223B;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 17px;
+}
 .label-text{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.label-text-timer{
+    font-size: 15px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -957,5 +976,11 @@ a:active{
     }
     .input-div-timestamp{
         flex-direction: column;
+    }
+    .label-text-timer{
+        font-size: 18px;
+    }
+    .input-text-timer{
+        font-size: 20px;
     }
 }
