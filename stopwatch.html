@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+    <title>Stopwatch</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 <body>
@@ -29,45 +29,33 @@
         <div class="container">
             <div class="main-div-timer">
                 <div class="main-div-title">
-                    <h1 class="heading-title">Countdown Timer</h1>
+                    <h1 class="heading-title">Stopwatch</h1>
                 </div>
-                <div class="input-div-timestamp" id="input-div-time">
-                    <div>
-                        <label for="hour" class="label-text-timer">Hour:</label><br>
-                        <input type="number" id="hour" placeholder="hh" class="input-text-timer" min="00" max="23"> 
-                      </div>
-                      <div>
-                        <label for="minute" class="label-text-timer">Minute:</label><br>
-                        <input type="number" id="minute" placeholder="mm" class="input-text-timer" min="00" max="59"> 
-                      </div>
-                      <div>
-                        <label for="second" class="label-text-timer">Second:</label><br>
-                        <input type="number" id="second" placeholder="ss" class="input-text-timer" min="00" max="59"> 
-                      </div>  
+                <div class="watch">
+                    <span id="hour" class="watch-text">00</span>
+                    <span class="watch-text">:</span>
+                    <span id="minute" class="watch-text">00</span>
+                    <span class="watch-text">:</span>
+                    <span id="second" class="watch-text">00</span>
+                    <span class="watch-text">:</span>
+                    <span id="millisecond" class="watch-text">000</span>
                 </div>
-                <div class="button-container">
+                <div class="watch-button">
                     <div>
-                      <input type="button" id="start" value="START" class="button-timer">
+                        <input type="button" value="Start" class="button-stopwatch" id="start">
                     </div>
                     <div>
-                      <input type="button" id="reset" value="RESET" class="button-timer">
+                        <input type="button" value="Pause" class="button-stopwatch" id="pause">
                     </div>
-                  </div>
+                    <div>
+                        <input type="button" value="Reset" class="button-stopwatch" id="reset"> 
+                    </div>
+                </div>
+                
             </div>
-        </div>
- 
-           
-          
-             
-       
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer-div">
-            Web-Utilities : Countdown Timer
-        </div>
 
-    </footer>
-      <script src="/timer.js"></script>
+        </div>
+    </main>
+    <script src="/stopwatch.js"></script>
 </body>
 </html>
