@@ -747,6 +747,28 @@ h4{
     .button-stopwatch:hover{
         background-color: #22223B;
     }
+    .main-div-ipaddress{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #C9ADA7;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #22223B;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: auto;
+        margin-left: 300px;
+        margin-right: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #22223bbb ;
+        padding: 100px;
+        font-size: 26px;
+        color: #22223B;
+        text-decoration: solid;
+        font-weight: bolder;
+        min-height: calc(100vh-40px);
+    }
 @media screen and (max-width: 600px) {
     .header-flexbox{
         display: flex;
