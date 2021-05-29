@@ -1087,4 +1087,18 @@ h4{
     .input-text-timer{
         font-size: 20px;
     }
+    .card-div{
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-bottom: 50px;
+        align-items: center;
+
+    }
+    .card{
+        width: 75%;
+        height: 175px;
+    }
 }

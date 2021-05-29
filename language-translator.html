@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-flexbox">
+        <div class="div-logo">
+          <a href="/index.html" class="logo">HOME</a>
+        </div>
+        <div class="div-nav">
+          <nav class="nav">
+            <a href="/encoder-decoder.html" class="nav-anchor"
+              >Encoder<br />Decoder</a
+            >
+            <a href="/rgb-hex-converter.html" class="nav-anchor"
+              >RGB/HEX<br />Converter</a
+            >
+            <a href="/timestamp-converter.html" class="nav-anchor"
+              >Timestamp<br />Converter</a
+            >
+            <a href="/unit-converter.html" class="nav-anchor"
+              >Unit<br />Converter</a
+            >
+            <a href="/number-base-converter.html" class="nav-anchor"
+              >Number Base<br />Converter</a
+            >
+            <a href="/text-string-utilities.html" class="nav-anchor"
+              >String<br />Utilities</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="button-box selector">
+        <p class="input-label">TRANSLATE FROM:</p>
+        <select class="select-input" id="translate-input" name="input">
+          <option value="af">Afrikaans</option>
+          <option value="ar">Arabic</option>
+          <option value="hy">Armenian</option>
+          <option value="bn">Bengali</option>
+          <option>Chinese</option>
+          <option value="da">Danish</option>
+          <option value="nl">Dutch</option>
+          <option selected value="en">English</option>
+          <option value="fr">French</option>
+          <option value="el">Geek</option>
+          <option value="de">German</option>
+          <option value="hi">Hindi</option>
+          <option value="it">Italian</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="la">Latin</option>
+          <option value="mn">Mongolian</option>
+          <option value="ne">Nepali</option>
+          <option value="pa">Punjabi</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="sv">Swedish</option>
+          <option value="ta">Tamil</option>
+          <option value="te">Telgu</option>
+          <option value="tr">Turkish</option>
+          <option value="ur">Urdu</option>
+        </select>
+        <p class="output-label">TRANSLATE TO:</p>
+        <select class="select-output" id="translate-output" name="output">
+          <option value="af">Afrikaans</option>
+          <option value="ar">Arabic</option>
+          <option value="hy">Armenian</option>
+          <option value="bn">Bengali</option>
+          <option>Chinese</option>
+          <option value="da">Danish</option>
+          <option value="nl">Dutch</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="el">Geek</option>
+          <option value="de">German</option>
+          <option selected value="hi">Hindi</option>
+          <option value="it">Italian</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="la">Latin</option>
+          <option value="mn">Mongolian</option>
+          <option value="ne">Nepali</option>
+          <option value="pa">Punjabi</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="sv">Swedish</option>
+          <option value="ta">Tamil</option>
+          <option value="te">Telgu</option>
+          <option value="tr">Turkish</option>
+          <option value="ur">Urdu</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <input
+          type="text"
+          id="input-string"
+          spellcheck="false"
+          placeholder="Enter the string."
+        />
+        <input
+          type="text"
+          id="output-string"
+          readonly
+          placeholder="Your results."
+        />
+      </div>
+      <div class="button-box box1">
+        <input type="button" id="translate" value="Translate" />
+      </div>
+    </main>
+    <script src="language-translator.js"></script>
+  </body>
+</html>
